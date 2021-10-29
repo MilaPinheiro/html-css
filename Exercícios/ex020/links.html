@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links</title>
+  <style>
+
+    /*
+    # = id
+    . = class
+    : = pseudo-class
+    ::= pseudo-element
+    > = clildren
+    
+    */
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    a {
+      color:rgb(204, 39, 39); /*cor para o link fiar tudo da mesma cor*/
+      text-decoration: none; /*retirar o sublinhado*/
+      font-weight: bold;
+    }
+    a:visited { /*essa pseudo-classe para colocar o link na cor que quiser(aqui no caso a cor darkred para mostrar os sites visitados*/
+      color: darkred;
+      text-decoration: none;
+    }
+    a:hover { /*pseudo classe usa (:)*/
+      color:black;
+      text-decoration: underline; /*para passar o mouse por cima ficar preto e sublinhado */
+    }
+    a:active {
+      color: yellow; /*quando o link é clicado ficar da cor (ex aqui, amarelo)*/
+    }
+    .especial {
+      background-color: rgba(20, 51, 228, 0.575);
+    
+    }
+    .especial::before {
+      content: '↞';
+    }
+    .especial::after { /*pseudo elemento usa (::)*/
+      content: '↠' ;/*significa, depois de todos os links, avisa que é um link* poderia colocar escrito tipo assim ' [link] '*/
+      text-decoration: none;
+      font-weight: normal;
+      color: darkgray;
+
+    }
+  </style>
+</head>
+<body>
+  <h1>Personalizando Links</h1>
+  <ul>
+    <li><a href="https://gustavoguanabara.github.io" target="_blank">Repositório GitHub</a></li>
+    <li><a href="https://youtube.com/cursoemvideo/" target="_blank" class="especial">Canal do YouTube</a></li>
+    <li><a href="https://www.cursoemvideo.com" target="_blank">Site do CursoemVideo</a></li>
+  </ul>
+</body>
+</html>

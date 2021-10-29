@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontes em CSS</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+
+      /*
+      Medidas Absolutas 
+      cm, mm, in (polegada), px, pt, pc
+
+      Medidas Relativas
+      em, ex, rem, vw, vh, %
+      
+      Medidas recomendadas: px e em
+
+
+      16px é o valor que já vem automatico nos navegadores
+      16px geralmente é = 1em
+      */
+      
+      font-size: 1em;
+     
+      /*text-decoration: underline; para deixar sublinhado*/
+
+      /*propriedades font-weight : (lighter normal bold bolder) tipos numericos (100 a 900)*/
+      /*weight(peso) width(altura) height(altura)*/
+    }
+
+    h1 {
+ /*   font-family: 'work Sans', sans-serif;
+      font-weight: bolder ;
+      font-size: 3em;
+      font-style: italic;
+
+      shorthand font (serve para condensar as configurações)
+      ex: font-style => font-weight => font-size => font-family
+      */
+      font: italic bolder 3em 'work Sans', sans-serif;
+
+    }
+      
+     h2 {
+        font: bold 2em 'work Sans'
+
+      }
+  </style>
+</head>
+<body>
+  <h1>Trabalhando com fontes</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates quis necessitatibus excepturi, facilis quas esse aliquam, vitae magni dolor eaque illum. Assumenda autem at sequi sint dolorem, non eaque quas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius velit dolorem esse deserunt consequatur doloribus minima molestiae. Minima impedit, aperiam repellat explicabo, nemo odit unde, consequatur recusandae nisi nam quis.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem excepturi, omnis aliquam culpa atque eaque consequatur? Minus perspiciatis amet quod id nihil eos exercitationem officia ex nulla accusamus? Nemo, minus!</p>
+  <h2>Subtítulo do exercício</h2>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore dolor hic quasi, iste rem fugiat, itaque labore velit et soluta, dignissimos ut autem doloremque sequi accusantium illum odit doloribus ab.</p>
+</body>
+</html>

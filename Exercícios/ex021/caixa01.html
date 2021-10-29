@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modelo de Caixas</title>
+  <style>
+    h1 { /*box-level*/
+      background-color: coral;
+      height: 300px;
+      width: 300px;
+
+      /*border-width: 10px;
+      border-style: solid;    
+      border-color: darkred;  ( forma de baixo/ simplificada é usando shorthand)*/
+      border: 10px solid darkred;
+
+     /* padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px; ( forma de baixo/ simplificada é usando shorthand)*/
+      padding: 10px; /*já fica o valor pra todos(top,right,bottom e left*/ /* se colocar pedding: 10px 20px fica (10px para top e bottom, 20px para right e left*/
+
+      /* margin-top: 20px;
+      margin-right: 20px;
+      margin-bottom: 20px;
+      margin-left: 40px; ( forma de baixo/ simplificada é usando shorthand)*/
+      /*margin: 20px 20px 40px 20px; pode usar assim ou como o de baixo com o (auto)*/
+      margin: 20px auto 40px auto;
+
+     /* outline-width: 5px;
+      outline-style: dashed;
+      outline-color: black; ( forma de baixo/ simplificada é usando shorthand)*/
+      outline: 5px dashed black;
+    }
+
+    a { /*inline-level*/
+      /*border-width: 10px;
+      border-style: solid;
+      border-color: blueviolet; ( forma de baixo/ simplificada é usando shorthand)*/
+      border: 10px solid blueviolet;
+
+      /*padding-top: 10px;
+      padding-right: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px; ( forma de baixo/ simplificada é usando shorthand)*/
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Exemplo de caixa Box-level</h1>
+  <p>Também são exemplos de box-level, mas os <a href="#">Links são exemplos de caixas inline-level</a>Vamos ver como tudo isso funciona</p>
+</body>
+</html>
